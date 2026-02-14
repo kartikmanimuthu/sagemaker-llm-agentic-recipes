@@ -1,0 +1,37 @@
+# SageMaker LLM Recipes - Dependency Manifest
+# Root requirements file combining core deployment and example dependencies.
+
+# Core SageMaker & ML
+sagemaker>=2.232.0
+sagemaker-core<2.0.0,>=1.0.17
+boto3
+transformers>=4.36.0
+torch>=2.1.0
+accelerate>=0.25.0
+huggingface_hub
+bitsandbytes
+sentencepiece
+protobuf<6.32,>=3.12
+
+# LangChain & LangGraph integration
+langchain
+langchain-community
+langgraph
+
+# Utilities & Deployment Examples
+cloudpickle>=2.2.1
+docker
+fastapi
+google-pasta
+graphene<4,>=3
+jsonschema
+omegaconf<3,>=2.2
+pandas
+pathos
+schema
+smdebug-rulesconfig==1.0.1
+tblib<4,>=1.7.0
+tqdm
+uvicorn
+packaging
+importlib-metadata
