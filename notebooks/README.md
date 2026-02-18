@@ -8,37 +8,37 @@ These notebooks provide step-by-step guides for deploying various open-source la
 
 ## Available Notebooks
 
-### 01_deploy_openai_gpt_oss_20b.ipynb
+### 01_deploy_model_gpt_neox_20b.ipynb
 Deploy GPT-NeoX 20B, a large-scale open-source language model. Demonstrates:
 - Working with 20B parameter models
 - Multi-GPU deployment strategies
 - Memory optimization techniques
 
-### 02_inference_openai_gpt_oss_20b.ipynb
+### 02_invoke_endpoint_gpt_neox_20b.ipynb
 Perform inference on the deployed GPT-NeoX model. Covers:
 - Endpoint invocation patterns
 - Parameter tuning (temperature, top_p, max_tokens)
 - Response parsing and handling
 
-### 03_deploy_huggingface_to_sagemaker.ipynb
+### 03_deploy_model_huggingface_hub.ipynb
 General-purpose guide for deploying any HuggingFace model to SageMaker. Includes:
 - Model selection from HuggingFace Hub
 - Container image configuration
 - Instance type recommendations
 
-### 04_sagemaker_huggingface_deployment.ipynb
+### 04_deploy_model_custom_container.ipynb
 Advanced deployment patterns with custom configurations:
 - Custom inference code
 - Environment variable management
 - Production deployment best practices
 
-### 05_sagemaker_chat_langgraph.ipynb
+### 05_build_agent_langgraph_chat.ipynb
 Integrate deployed models with LangGraph for conversational AI:
 - Building chat interfaces
 - Stateful conversation management
 - Multi-turn dialogue handling
 
-### 06_sagemaker_jumpstart_deploy_and_chat.ipynb
+### 06_workflow_jumpstart_lifecycle.ipynb
 Use SageMaker JumpStart for one-click model deployment:
 - Pre-configured model catalog
 - Simplified deployment workflow
@@ -51,7 +51,7 @@ Use SageMaker JumpStart for one-click model deployment:
 jupyter notebook
 
 # Or run individual notebooks with papermill
-papermill 01_deploy_openai_gpt_oss_20b.ipynb output.ipynb
+papermill 01_deploy_model_gpt_neox_20b.ipynb output.ipynb
 ```
 
 ## Why Notebooks?

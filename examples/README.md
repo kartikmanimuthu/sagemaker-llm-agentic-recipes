@@ -8,11 +8,11 @@ These examples demonstrate how to build **production-grade Agentic AI** by integ
 
 ## Available Examples
 
-### sagemaker_chat_langgraph.py
+### agent_stateful_chat_langgraph.py
 Build a stateful conversational agent using LangGraph:
 
 ```bash
-python sagemaker_chat_langgraph.py
+python agent_stateful_chat_langgraph.py
 ```
 
 **Demonstrates:**
@@ -26,11 +26,11 @@ python sagemaker_chat_langgraph.py
 - Research assistants
 - Interactive tutorials
 
-### bedrock_sagemaker_langchain.py
+### rag_hybrid_bedrock_sagemaker.py
 Hybrid architecture using both Bedrock and SageMaker:
 
 ```bash
-python bedrock_sagemaker_langchain.py
+python rag_hybrid_bedrock_sagemaker.py
 ```
 
 **Demonstrates:**
@@ -44,11 +44,11 @@ python bedrock_sagemaker_langchain.py
 - A/B testing between Bedrock and open-source models
 - Fallback patterns (primary + backup model)
 
-### sagemaker_jumpstart_deploy.py
+### workflow_jumpstart_sdk_deploy.py
 Programmatic deployment using SageMaker JumpStart SDK:
 
 ```bash
-python sagemaker_jumpstart_deploy.py
+python workflow_jumpstart_sdk_deploy.py
 ```
 
 **Demonstrates:**
@@ -89,7 +89,7 @@ export AWS_PROFILE=your-profile  # If needed
 
 # Run any example
 cd examples
-python sagemaker_chat_langgraph.py
+python agent_stateful_chat_langgraph.py
 ```
 
 ## Building Your Own

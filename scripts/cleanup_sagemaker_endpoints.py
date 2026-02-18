@@ -6,7 +6,7 @@ import time
 PROFILE_NAME = os.environ.get('AWS_PROFILE', 'default')
 REGION_NAME = 'ap-south-1' # Defaulting to ap-south-1 as seen in previous files, but session usage usually picks it up from config if not specified.
 
-def delete_all_endpoints():
+def cleanup_sagemaker_endpoints():
     try:
         session = boto3.Session(profile_name=PROFILE_NAME, region_name=REGION_NAME)
         sm_client = session.client('sagemaker')
@@ -50,4 +50,4 @@ def delete_all_endpoints():
         print(f"An error occurred: {e}")
 
 if __name__ == "__main__":
-    delete_all_endpoints()
+    cleanup_sagemaker_endpoints()

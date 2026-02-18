@@ -5,7 +5,7 @@ First off, thank you for considering contributing to this repository! It's peopl
 ## How Can I Contribute?
 
 ### Reporting Bugs
-*   Check the [Issues](https://github.com/your-username/sagemaker-llm-recipes/issues) to see if it has already been reported.
+*   Check the [Issues](https://github.com/kartikmanimuthu/sagemaker-llm-recipes/issues) to see if it has already been reported.
 *   If not, open a new issue. Clearly describe the problem and include steps to reproduce it.
 
 ### Suggesting Enhancements

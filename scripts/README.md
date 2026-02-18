@@ -11,12 +11,12 @@ These scripts provide command-line interfaces for common SageMaker operations. U
 
 ## Available Scripts
 
-### deploy_deepseek.py
+### deploy_endpoint_deepseek_r1.py
 Deploy DeepSeek R1 Distill (8B) model from HuggingFace:
 ```bash
 export SAGEMAKER_ROLE_ARN=arn:aws:iam::ACCOUNT:role/ROLE
 export HF_TOKEN=your_token
-python deploy_deepseek.py
+python deploy_endpoint_deepseek_r1.py
 ```
 
 **What it does:**
@@ -25,12 +25,12 @@ python deploy_deepseek.py
 - Tests inference with sample prompt
 - Optionally cleans up endpoint
 
-### deploy_gemma.py
+### deploy_endpoint_gemma_7b.py
 Deploy Google Gemma 7B (gated model):
 ```bash
 export SAGEMAKER_ROLE_ARN=arn:aws:iam::ACCOUNT:role/ROLE
 export HF_TOKEN=your_token  # Must have Gemma license access
-python deploy_gemma.py
+python deploy_endpoint_gemma_7b.py
 ```
 
 **What it does:**
@@ -39,20 +39,20 @@ python deploy_gemma.py
 - Handles gated model authentication
 - Performs test inference
 
-### delete_all_endpoints.py
+### cleanup_sagemaker_endpoints.py
 Clean up all SageMaker endpoints in your account:
 ```bash
-python delete_all_endpoints.py
+python cleanup_sagemaker_endpoints.py
 ```
 
 **Use case:** Cost management by removing unused endpoints.
 
 > ⚠️ **Warning:** This will delete ALL endpoints. Use with caution in production accounts.
 
-### test_local_inference.py
+### validate_endpoint_inference.py
 Test model inference locally before SageMaker deployment:
 ```bash
-python test_local_inference.py
+python validate_endpoint_inference.py
 ```
 
 **Benefits:**

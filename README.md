@@ -33,7 +33,7 @@ The repository is organized into focused areas to help you find exactly what you
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/sagemaker-llm-recipes.git
+git clone https://github.com/kartikmanimuthu/sagemaker-llm-recipes.git
 cd sagemaker-llm-recipes
 ```
 
@@ -121,4 +121,4 @@ For vulnerability reporting and security best practices, please refer to our [`S
 Distributed under the MIT License. See [`LICENSE`](./LICENSE) for more information.
 
 ---
-*Maintained with ❤️ by [Kartik](https://github.com/your-username)*
+*Maintained with ❤️ by [Kartik](https://github.com/kartikmanimuthu)*
